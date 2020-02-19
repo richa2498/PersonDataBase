@@ -17,7 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:text="Add Data Here"
+            android:text="Add Data Here 📓"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
@@ -39,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/etPhone"
-            android:hint="Phone Number:"
+            android:hint="Phone Number📱"
             android:inputType="number"
             android:digits="0123456789"/>
         <EditText

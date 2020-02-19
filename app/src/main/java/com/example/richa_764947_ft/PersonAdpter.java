@@ -51,7 +51,7 @@ public class PersonAdpter extends ArrayAdapter {
 
 
         final Person person = personList.get(position);
-        tvname.setText(person.getFname());
+        tvname.setText(person.getFname().toUpperCase());
         tvsalary.setText(person.getLname());
         tvdept.setText(person.getPhone());
         tvjoinDate.setText(person.getAddress());

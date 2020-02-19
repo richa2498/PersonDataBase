@@ -40,7 +40,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mDatabase = new DataBaseHelper(this);
         loadData();
-        tv.setText("You have "+loadData()+" Contacts");
+
+            tv.setText("You have "+loadData()+" Contacts");
+
+
 
     }
     private int loadData() {

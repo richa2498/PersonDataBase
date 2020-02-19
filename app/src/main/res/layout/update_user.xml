@@ -45,6 +45,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_update_emp"
+                android:background="#020000"
+                 android:textStyle="bold"
+                android:textColor="#fff"
                 android:text="Upadte Changes!"/>
 
 
