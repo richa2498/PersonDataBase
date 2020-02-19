@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.tvViewData:
                 Intent intent = new Intent(this,ShowUser.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 break;
 
@@ -106,9 +107,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
         for (int i =0;i<number.size();i++){
-            Toast.makeText(this, "in", Toast.LENGTH_SHORT).show();
             if (number.contains(mPhone)){
                 isSame = true;
+            }
+            else {
+                isSame = false;
             }
         }
         if (!isSame){

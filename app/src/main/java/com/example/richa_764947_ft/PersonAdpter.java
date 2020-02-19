@@ -178,6 +178,9 @@ public class PersonAdpter extends ArrayAdapter {
         } else {
             for (Person person : arraylist) {
                 if (person.getPhone().toLowerCase(Locale.getDefault())
+                        .contains(charText) || person.getFname().toLowerCase(Locale.getDefault())
+                        .contains(charText)|| person.getLname().toLowerCase(Locale.getDefault())
+                        .contains(charText) || person.getAddress().toLowerCase(Locale.getDefault())
                         .contains(charText)) {
                     personList.add(person);
                 }
