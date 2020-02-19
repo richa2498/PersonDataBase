@@ -59,8 +59,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
        return c.getCount();
 
+
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        fname.setText("");
+        lname.setText("");
+        phone.setText("");
+        address.setText("");
+        loadData();
+        tv.setText("You have "+loadData()+" Contacts");
+    }
 
     @Override
     public void onClick(View v) {
